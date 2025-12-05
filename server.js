@@ -57,15 +57,3 @@ app.post('/api/chat', async (req, res) => {
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`✅ Server backend jalan di port ${PORT}`);
 });
-```
-
-4. **Save** (Ctrl + S)
-
----
-
-#### **File 3: `.gitignore`**
-1. Buat file: **`.gitignore`**
-2. Isi:
-```
-node_modules/
-.env
