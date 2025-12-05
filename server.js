@@ -33,7 +33,9 @@ app.post('/api/chat', async (req, res) => {
 
     // Panggil Google Gemini
     const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash-exp' });
+    
+    // GANTI MODEL DI SINI! ↓
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' }); // ← REKOMENDASI!
     
     const result = await model.generateContent(message);
     const response = await result.response;
